@@ -1,0 +1,75 @@
+$color_1: #323842;
+$color_2: #171a1f;
+$color_3: #424955;
+$color_4: #bcc1ca;
+$color_5: #ffffff;
+$font-family_1: "Archivo-Bold", sans-serif;
+$font-family_2: "Inter-Regular", sans-serif;
+$border-color_1: rgba(0, 0, 0, 0);
+
+.Footer {
+	box-sizing: border-box;
+	// height: 554px;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	* {
+		box-sizing: border-box;
+	}
+
+	>div {
+		&:first-child {
+			display: flex;
+			align-items: center;
+			gap: 15px;
+
+			>img {
+				border-radius: 6px;
+				width: 48px;
+				height: 48px;
+				left: 600px;
+				top: 96px;
+				overflow: hidden;
+			}
+
+			>div {
+				color: $color_2;
+				text-align: left;
+				font-family: $font-family_1;
+				font-size: 32px;
+				line-height: 48px;
+				font-weight: 700;
+				// position: absolute;
+				left: 660px;
+				top: 96px;
+				transform-origin: 0 0;
+				transform: rotate(0deg) scale(1, 1);
+			}
+		}
+
+		&:last-child {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			height: 60px;
+
+			>div {
+				display: flex;
+				gap: 10px;
+
+				>div {
+					color: $color_3;
+					text-align: left;
+					font-family: $font-family_2;
+					font-size: 14px;
+					line-height: 22px;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+}
