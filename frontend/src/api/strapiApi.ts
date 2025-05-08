@@ -8,7 +8,7 @@ export async function getPosts() {
   return (await response.json())["data"];
 }
 
-export async function getPostById(id: string | number) {
+export async function getPostById(id: string) {
   const response = await fetch(`${BASE_URL}/posts/${id}?populate=*`);
   if (!response.ok) {
     throw new Error('Error fetching the post');

@@ -10,7 +10,7 @@ const Header: React.FC = () => {
 				<div>NeumoBlog</div>
 			</div>
 			<div>
-				{Object.entries({"Home":'/', "Blog":'.', "About":'/about'}).map(([n,t]) => (
+				{Object.entries({"Home":'/', "Blog":'/posts', "About":'/about'}).map(([n,t]) => (
 					<a href={t}>
 						<div>{n}</div>
 					</a>
